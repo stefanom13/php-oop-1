@@ -15,6 +15,6 @@ class Movie{
     }
 
     public function getDescription(){
-        return $this->title.' di '.$this->author.'<br>Anno '.$this->year . ' <br> Lingua:'.$this->language ;
+        return $this->title.'<br>  di '.$this->author.'<br>Anno '.$this->year . ' <br> Lingua:'.$this->language ;
     }
 }

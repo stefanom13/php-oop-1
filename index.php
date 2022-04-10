@@ -8,6 +8,11 @@ stampate a schermo i valori delle relative proprietà di ogni oggetto (potete cr
 <?php
     include_once __DIR__."/db.php";
 
+    $theGuilty = new movie("The Guilty", "Antoine Fuqua", 2020, "FR");
+    $freaksOut = new movie("Freaks Out", "Gabriele Mainetti", 2020, "IT");
+    $promises = new movie("Promises", "Amanda Sthers", 2020, "IT");
+    $deep = new movie("Deep", "Sita Likitvanichkul", 2020, "EN");
+
 ?>
 
 <!DOCTYPE html>
@@ -20,6 +25,13 @@ stampate a schermo i valori delle relative proprietà di ogni oggetto (potete cr
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div>
+        <ul>
+            <li>
+                <?php echo $theGuilty->getDescription();?>  
+            </li>
+        </ul>
+    </div>
   
 </body>
 </html>
