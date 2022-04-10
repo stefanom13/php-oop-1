@@ -25,10 +25,22 @@ stampate a schermo i valori delle relative proprietà di ogni oggetto (potete cr
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    <div class="header">
+        <h1>Movies</h1>
+    </div>
+    <div class="container">
         <ul>
             <li>
                 <?php echo $theGuilty->getDescription();?>  
+            </li>
+            <li>
+                <?php echo $freaksOut->getDescription();?>  
+            </li>
+            <li>
+                <?php echo $promises->getDescription();?>  
+            </li>
+            <li>
+                <?php echo $deep->getDescription();?>  
             </li>
         </ul>
     </div>
